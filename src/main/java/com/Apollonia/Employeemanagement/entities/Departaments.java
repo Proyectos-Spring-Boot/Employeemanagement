@@ -24,7 +24,7 @@ public class Departaments {
     @Column(name = "description", length = 50)
     private String description;
 
-    @OneToMany(mappedBy = "departaments", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = false)
+    @OneToMany(mappedBy = "departament", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = false)
     @JsonIgnore
     private List<Employees> employeesList;
 }
