@@ -6,7 +6,7 @@ import com.Apollonia.Employeemanagement.entities.Employees;
 import java.util.List;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = {DepartamentsMapper.class})
 public interface EmployeesMapper {
 
     Employees asEntity(EmployeesDh employeesDh);
@@ -15,6 +15,6 @@ public interface EmployeesMapper {
 
     List<Employees> asEntityList(List<EmployeesDh> employeesDhList);
 
-    List<EmployeesDto> asDtoList(List<Employees> employees);
+    List<EmployeesDto> asDtoList(List<Employees> employeesList);
 
 }

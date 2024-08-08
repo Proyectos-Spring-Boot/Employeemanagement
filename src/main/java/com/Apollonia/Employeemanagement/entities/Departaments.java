@@ -15,7 +15,7 @@ public class Departaments {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Cdepartament")
+    @Column(name = "Cdepartament", length = 3)
     private Long cdepartament;
 
     @Column(name = "departament", length = 25, nullable = false)
@@ -24,7 +24,7 @@ public class Departaments {
     @Column(name = "description", length = 50)
     private String description;
 
-    @OneToMany(mappedBy = "departament", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = false)
+    @OneToMany(mappedBy = "departaments", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY, orphanRemoval = false)
     @JsonIgnore
     private List<Employees> employeesList;
 }

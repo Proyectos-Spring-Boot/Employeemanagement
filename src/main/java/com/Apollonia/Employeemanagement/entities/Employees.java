@@ -16,7 +16,7 @@ public class Employees {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Nemployee")
+    @Column(name = "Nemployee", length = 5)
     private Long nemployee;
 
     @Column(name = "fullname", length = 40, nullable = false)
@@ -31,6 +31,9 @@ public class Employees {
     @Column(name = "dadmission", length = 11)
     private String dadmission;
 
+    @Column(name = "salary")
+    private Double salary;
+
     @Column(name = "position", length = 1)
     private Boolean position;
 
@@ -40,5 +43,5 @@ public class Employees {
     @ManyToOne
     @JoinColumn(name = "cdepartament", referencedColumnName = "Cdepartament")
     @JsonIgnore
-    private Departaments departament;
+    private Departaments departaments;
 }

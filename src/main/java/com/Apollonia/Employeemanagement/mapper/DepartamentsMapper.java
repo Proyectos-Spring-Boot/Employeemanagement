@@ -16,6 +16,6 @@ public interface DepartamentsMapper {
 
     List<Departaments> asEntityList(List<DepartamentsDh> departamentsDhList);
 
-    List<DepartamentsDto> asDtoList(List<Departaments> departaments);
+    List<DepartamentsDto> asDtoList(List<Departaments> departamentsList);
 
 }

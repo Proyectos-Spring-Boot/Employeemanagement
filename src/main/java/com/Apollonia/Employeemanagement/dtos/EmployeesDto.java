@@ -3,6 +3,8 @@ package com.Apollonia.Employeemanagement.dtos;
 import com.Apollonia.Employeemanagement.entities.Departaments;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class EmployeesDto {
 
@@ -10,16 +12,16 @@ public class EmployeesDto {
 
     private String fullname;
 
-    private  String phone;
+    private String phone;
 
     private String email;
 
     private String dadmission;
 
-    private String salary;
+    private Double salary;
 
     private Boolean position;
 
-    private Departaments departament;
+    private Departaments departaments;
 
 }

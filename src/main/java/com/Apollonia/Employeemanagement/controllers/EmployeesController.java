@@ -23,7 +23,7 @@ public class EmployeesController {
     private EmployeesServices employeesServices;
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<EmployeesDto> create(@Validated @PathVariable final EmployeesDh employeesDh) {
+    public ResponseEntity<EmployeesDto> create(@Validated @RequestBody final EmployeesDh employeesDh) {
         return ResponseEntity.ok(this.employeesServices.save(employeesDh));
     }
 
