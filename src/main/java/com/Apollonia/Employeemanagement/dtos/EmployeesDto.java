@@ -22,6 +22,8 @@ public class EmployeesDto {
 
     private Boolean position;
 
+    private String password;
+
     private Departaments departaments;
 
 }

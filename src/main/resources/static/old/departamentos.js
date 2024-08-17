@@ -22,8 +22,8 @@ async function cargarDepartamentos() {
 
         let listadoHTML = '';
         for (let departamento of departamentos) {
-            let botonEliminar = '<a href="#" onclick="eliminarDepartamento(' + departamento.cdepartament + ')" class="btn btn-danger btn-circle btn-sm" title="Borrar"><i class="fas fa-trash"></i></a>';
-            let botonEditar = '<a href="#" onclick="editarDepartamento(' + departamento.cdepartament + ')" class="btn btn-info btn-circle btn-sm" title="Editar"><i class="fas fa-info-circle"></i></a>';
+            let botonEliminar = '<a href="#" onclick="eliminarDepartamento(' + departamento.cdepartament + ')" class="btn btn-danger btn-circle btn-sm"><i class="fas fa-trash"></i></a>';
+            let botonEditar = '<a href="#" onclick="editarDepartamento(' + departamento.cdepartament + ')" class="btn btn-info btn-circle btn-sm"><i class="fas fa-info-circle"></i></a>';
 
             let departamentoHTML = '<tr><td>' + departamento.cdepartament + '</td><td>' + departamento.departament + '</td><td>' + botonEliminar + '  ' + botonEditar + '</td></tr>';
 
@@ -57,5 +57,31 @@ async function eliminarDepartamento(cdepartament) {
 }
 
 async function editarDepartamento(cdepartament) {
-    window.location.href = '../editdepartamentos.html?codigo=' + encodeURIComponent(cdepartament);
+    numero = Number(cdepartament)
+    try {
+        const request = await fetch(`departaments/${numero}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        });
+        const registro = await request.json();
+
+
+        let code = registro.cdepartament;
+        let name = registro.departament;
+        let descrip = registro.description;
+
+
+
+        try {
+            console.dir(registro);
+            window.location.href = '../editdepartamentos.html?codigo=' + encodeURIComponent(code) + '&nombre=' + encodeURIComponent(name) + '&descripcion=' + encodeURIComponent(descrip);
+        } catch (error) {
+            console.error('Error loading the web page editdepartamentos.html:', error);
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
 }

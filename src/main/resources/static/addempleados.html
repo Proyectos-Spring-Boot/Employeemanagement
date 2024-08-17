@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ADP - Departamentos</title>
+    <title>ADP - Add Departamento</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -185,33 +185,65 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Departamentos</h1>
-                    <p class="mb-4">Página de gestión departamentos de la empresa Apollonia Dental Practice .</p>
+                    <h1 class="h3 mb-2 text-gray-800">Añadir empleado</h1>
+                    <p class="mb-4">Página para añadir empleados de la empresa Apollonia Dental Practice .</p>
 
                     <!-- DataTales departaments -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables: Departaments.</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">DataTables: Employees (Insert).</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
+									 <thead>
                                         <tr>
-                                            <th>Numero</th>
-                                            <th>Departamento</th>
-											<th>Acciones</th>
+                                            <th>Nombre</th>
+											<th>Teléfono</td>
+                                            <th>Email</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
-                                        <tr>
-                                            <th>Numero</th>
-                                            <th>Departamento</th>											
-											<th>Acciones</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
-										
+                                    <td><input type="text"  size="40" id="nombreEmployee" name="nombreEmployee"></td>
+                                    <td><input type="text"  size="12" id="telefonoEmployee" name="telefonoEmployee"></td>
+									<td><input type="text"  size="30" id="emailEmployee" name="emailEmployee"></td>
+                                    </tbody>
+                                    <thead>
+                                    <tr>
+										<th>F. Alta</th>
+                                        <th>Salario</th>
+                                        <th>Contraseña</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tbody>
+                                    <td><input type="text"  size="11" id="fAltaEmployee" name="fAltaEmployee"></td>
+                                    <td><input type="text"  size="9" id="salarioEmployee" name="SalarioEmployee"></td>
+                                    <td><input type="text"  size="20" id="contraseñaEmployee" name="contraseñaEmployee"></td>
+                                    </tbody>
+                                    <thead>
+                                    <tr>
+                                        <th>Responsable</th>
+										<th>C. Departamento</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tbody>
+                                    <td><input type="text"  size="2" id="responsableEmployee" name="responsableEmployee"></td>
+                                    <td><input type="text"  size="3" id="codDepartamentoEmployee" name="codDepartamentoEmployee"></td>
+                                    </tbody>
+									
+									<thead>
+                                    <tr>
+                                        <th>Guardar</th>
+                                        <th>Salir</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tbody>
+                                    <td><a href="#" onclick="guardarEmpleado()" class="btn btn-primary btn-circle" id="submitButton" title="Guardar"><i class="fa fa-save"></i></a></td>
+                                    <td><a href="#" onclick="volverEmpleado()" class="btn btn-danger btn-circle" id="logoutButton" title="Salir"><i class="fa fa-times"></i></a></td>
                                     </tbody>
                                 </table>
                             </div>
@@ -280,7 +312,7 @@
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/departamentos.js"></script>
+    <script src="js/addempleado.js"></script>
 
 </body>
 

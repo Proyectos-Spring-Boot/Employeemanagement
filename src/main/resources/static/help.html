@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ADP - Departamentos</title>
+    <title>ADP - help</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -86,22 +86,10 @@
 
 
             <!-- Nav Item - Tables -->
-			<li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Principal</span></a>
-            </li>
-			
             <li class="nav-item active">
                 <a class="nav-link" href="departamentos.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Departamentos</span></a>
-            </li>
-			
-			<li class="nav-item active">
-                <a class="nav-link" href="adddepartamentos.html">
-                    <i class="fas fa-fw fa-pen"></i>
-                    <span>Añadir Departamentos</span></a>
             </li>
 
             <li class="nav-item active">
@@ -185,33 +173,102 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Departamentos</h1>
-                    <p class="mb-4">Página de gestión departamentos de la empresa Apollonia Dental Practice .</p>
+                    <h1 class="h3 mb-2 text-gray-800">Ayuda</h1>
+                    <p class="mb-4">Página de ayuda de la aplicación de recursos humanos de la empresa Apollonia Dental Practice .</p>
 
-                    <!-- DataTales departaments -->
+                    <!-- DataTales Employees -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables: Departaments.</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Help.</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Numero</th>
-                                            <th>Departamento</th>
-											<th>Acciones</th>
+                                            <th>Principal (index)</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Numero</th>
-                                            <th>Departamento</th>											
-											<th>Acciones</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
-										
+											<td><p>Ménu principal nada entrar en la aplicación.  Nos muestra un listado sencillo (no estan todos los datos) de los empleados que forman la plantilla de la empresa.  <br>Su ordenación es por número de empleado. <br><br>Todas las páginas que muestra la aplicación contara con un ménu lateral izquierdo donde encontraremos las páginas que podremos acceder y una ayuda que se desplegara dando como opciones las páginas: help (página actual), Servicio técnico.</p></td>
+                                    </tbody>
+									<thead>
+                                        <tr>
+                                            <th>Login, registro</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p><strong>Páginas pendientes de desarrollo para la seguridad de la aplicación.</strong><br><br>Login:  Para acceder a la aplicación.  <br><br>Registro: Si es un usuario nuevo se puede registrar con la minima información y luego mediante el login acceder a la alicación.<br></p></td>
+                                    </tbody>
+									<thead>
+                                        <tr>
+                                            <th>Departamentos</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>Ménu para la gestión de departamentos (Borrado, edición).  <br>En la pantalla inicial nos muestra un listado de todos los departamentos existen en la empresa (no muestra todos los campos de la tabla que contiene los departamentos).  <br><br>Su ordenación es por número de departamento y nos permitira mediante varios iconos borrar y editar el departamento seleccionado.</p></td>
+									</tbody>
+									<thead>
+                                        <tr>
+                                            <th>Departamentos (borrar)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>En el listado inicial de los departamentos, en cada linea estara presente el icono de borrar (cubo de basura).  <br><br>Al pulsar en el icono de borrar en la linea del departamento que estemos inmediatamente se abrira una ventana preguntando si estamos seguro del borrado.  <br><br>Si contestamos afirmativamente se borra el departamento.  <br><br><strong>Atención. </strong><br>Si existen empleados colgados de el departamento, no se borra el departamento, hasta que desvinculemos todos los empleados de ese departamento.  La aplicación no avisa de esta vinculación y esta pendiente de esta mejora.</p></td>
+											
+                                    </tbody>
+									<thead>
+                                        <tr>
+                                            <th>Departamentos (editar)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>En el listado inicial de los departamentos, en cada linea estara presente el icono de edición (bola con la i de información).  <br><br>Podremos modificar todos los campos si asi lo deseamos a excepción del numero de departamento.  <br><br>Tendremos dos iconos, uno para guardar cambios realizados y el otro para salir de la edición del departamento.</p></td>
+											
+                                    </tbody>
+									<thead>
+                                        <tr>
+                                            <th>Departamentos (añadir)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>Opción que esta en el ménu del lado izquierdo.  <br><br>Podremos añadir un departamento, hay dos iconos: uno es para guardar y el otro para salir.  <br></p></td>
+											
+                                    </tbody>
+									
+									
+									<thead>
+                                        <tr>
+                                            <th>Empleados</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>Ménu para la gestión de empleados (Borrado, edición).  <br>En la pantalla inicial nos muestra un listado de todos los empleados existen en la empresa (no muestra todos los campos de la tabla que contiene los empleados).  <br><br>Su ordenación es por número de empleado y nos permitira mediante varios iconos borrar y editar el empleado seleccionado.</p></td>
+									</tbody>
+									<thead>
+                                        <tr>
+                                            <th>Empleados (borrar)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>En el listado inicial de los empleados, en cada linea estara presente el icono de borrar (cubo de basura).  <br><br>Al pulsar en el icono de borrar en la linea del empleado que estemos inmediatamente se abrira una ventana preguntando si estamos seguro del borrado.  <br><br>Si contestamos afirmativamente se borra el empleado.  <br></p></td>
+                                    </tbody>
+									<thead>
+                                        <tr>
+                                            <th>Empleados (editar)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>En el listado inicial de los empleados, en cada linea estara presente el icono de edición (bola con la i de información).  <br><br>Podremos modificar todos los campos si asi lo deseamos a excepción del numero de empleado.  <br><br>Tendremos dos iconos, uno para guardar cambios realizados y el otro para salir de la edición del empleado.  <br><strong>Atención. </strong><br>Al cambiar o inserta un numero de departamento, la aplicación deberia comprobar su existencia o bien mostrar en una ventana un listado de departamentos.  Esta pendiente de esta mejora.</p></td>
+											
+                                    </tbody>
+									<thead>
+                                        <tr>
+                                            <th>Empleados (añadir)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+											<td><p>Opción que esta en el ménu del lado izquierdo.  <br><br>Podremos añadir un departamento, hay dos iconos: uno es para guardar y el otro para salir.  <br><br><strong>Atención. </strong><br>Al inserta un numero de departamento, la aplicación deberia comprobar su existencia o bien mostrar en una ventana un listado de departamentos.  Esta pendiente de esta mejora.</p></td>
                                     </tbody>
                                 </table>
                             </div>
@@ -280,7 +337,7 @@
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/departamentos.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 

@@ -22,8 +22,8 @@ async function cargarEmpleados() {
 
         let listadoHTML = '';
         for (let empleado of empleados) {
-            let botonEliminar = '<a href="#" onclick="eliminarEmpleado(' + empleado.nemployee + ')" class="btn btn-danger btn-circle btn-sm"><i class="fas fa-trash"></i></a>';
-            let botonEditar = '<a href="#" onclick="editarEmpleado(' + empleado.nemployeet + ')" class="btn btn-info btn-circle btn-sm"><i class="fas fa-info-circle"></i></a>';
+            let botonEliminar = '<a href="#" onclick="eliminarEmpleado(' + empleado.nemployee + ')" class="btn btn-danger btn-circle btn-sm" title="Borrar"><i class="fas fa-trash"></i></a>';
+            let botonEditar = '<a href="#" onclick="editarEmpleado(' + empleado.nemployee + ')" class="btn btn-info btn-circle btn-sm" title="Editar"><i class="fas fa-info-circle"></i></a>';
 
             let empleadoHTML = '<tr><td>' + empleado.nemployee + '</td><td>'
                                           + empleado.fullname + '</td><td>'
@@ -59,4 +59,8 @@ async function eliminarEmpleado(nemployee) {
     } catch (error) {
         console.error('Error deleting employee:', error);
     }
+}
+
+async function editarEmpleado(nemployee) {
+    window.location.href = '../editempleados.html?codigo=' + encodeURIComponent(nemployee);
 }
