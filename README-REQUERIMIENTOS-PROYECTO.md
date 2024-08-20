@@ -10,9 +10,10 @@ Este proyecto será un paso inicial hacia la construcción posterior de una apli
 ## Propuesta de arquitectura.
 Este proyecto RESTFULL usaremos para la parte de Backend y BBDD las siguientes tecnologías:
  - Spring Boot.
+ - Java 17.
  - MySQL.
 
- Usaremos el patrón de diseño REST (es parecido a MVC pero el cliente o FrontEnd realiza la función de vista).
+ Usaremos el patrón de diseño MVC pero adaptado a la aruitectura REST (es parecido a MVC pero el cliente o FrontEnd realiza la función de vista).
  ![enter image description here](https://terasolunaorg.github.io/guideline/5.2.0.RELEASE/en/_images/RESTOverviewApplicationConstitutionOnSpringMVC.png)
 
 

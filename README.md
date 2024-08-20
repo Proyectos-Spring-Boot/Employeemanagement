@@ -1,14 +1,14 @@
 ## PROYECTO GESTIÓN EMPLEADOS / DEPARTAMENTO.
 Este proyecto es una practica de una aplicación RESTFULL con Spring Boot, MySQL, Multi Page Application.
 
-Usamos el patrón de diseño REST, que a diferencia del MVC, la generación de las Vistas es realizado íntegramente en el FrontEnd.
+Usamos el patrón de diseño MVC pero adaptado a la arquitectura REST, donde la generación de las Vistas es realizado íntegramente en el FrontEnd.
 
-Donde se pasara los datos mediante JSON desde el Backend al FrontEnd y viceversa (en nuestro el FrontEnd esta instalado dentro del mismo Backend pero los datos son pasados mediante el JSON).
+Se pasara los datos mediante JSON desde el Backend al FrontEnd y viceversa (en nuestro caso el FrontEnd esta instalado dentro del mismo Backend pero los datos son pasados mediante JSON).
 
 Para más información consultar los siguientes README:
 
- - [README MEMORIA PROYECTO](https://github.com/Proyectos-Spring-Boot/Employeemanagement/blob/develop/README-REQUERIMIENTOS-ROYECTO.md)
- - [README REQUERIMIENTOS PROYECTO)](https://github.com/Proyectos-Spring-Boot/Employeemanagement/blob/develop/README-REQUERIMIENTOS-ROYECTO.md)
+ - README-MEMORIA-ROYECTO.md
+ - README-REQUERIMIENTOS-ROYECTO.md
 
 
 **AMPLIACIÓN DEL PROYECTO.**
